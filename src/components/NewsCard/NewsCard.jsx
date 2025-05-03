@@ -12,7 +12,6 @@ const NewsCard = ({ singleNews }) => {
     author,
     thumbnail_url,
     details,
-    tags,
   } = singleNews;
 
   const formattedDate = new Date(author.published_date).toLocaleDateString("en-US", {
@@ -22,7 +21,7 @@ const NewsCard = ({ singleNews }) => {
   });
 
   return (
-    <div className="card mt-5 bg-base-100 shadow-md mb-3 relative">
+    <div className="card mt-5 space-y-4 pb-4 bg-base-100 shadow-md mb-3 relative">
       {/* Top Section: Author and Icons */}
       <div className="flex justify-between bg-base-300 items-start p-4">
         <div className="flex items-center gap-3">
